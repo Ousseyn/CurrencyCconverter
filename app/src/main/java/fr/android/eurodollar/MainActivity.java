@@ -14,15 +14,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        text = (EditText) findViewById(R.id.editText1); //Attaches the element which id is editText1 to the variable text
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
     public void myClickHandler(View view) {
         switch (view.getId()) {
-            case R.id.button4:
-                RadioButton euroButton = (RadioButton) findViewById(R.id.radioButton4);
-                RadioButton dollarButton = (RadioButton) findViewById(R.id.radioButton5);
+            case R.id.convertBtn:
+                text = (EditText) findViewById(R.id.text1); //Attaches the element which id is editText1 to the variable text
+                RadioButton euroButton = (RadioButton) findViewById(R.id.radioBtnEuro);
+                RadioButton dollarButton = (RadioButton) findViewById(R.id.radioBtnDollar);
                 if (text.getText().length() == 0) {
                     Toast.makeText(this, "Please enter a valid number", Toast.LENGTH_LONG).show();
                     return;
@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     // Convertir Dollar à Euro
-    private float convertDollarToEuro(float dollar) {
-        return (float) (dollar*0.94); // formule à utiliser
+    private double convertDollarToEuro(float dollar) {
+        return  (dollar*0.94); // formule à utiliser
     }
     // Convertir Euro à Dollar
-    private float convertEuroToDollar(float euro) {
+    private double convertEuroToDollar(float euro) {
         return ((float) (euro*1.06)); // formule à utiliser
     }
 }

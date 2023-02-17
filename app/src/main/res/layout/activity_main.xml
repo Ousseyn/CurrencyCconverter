@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_main">
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -18,7 +18,7 @@
         android:text="@string/valueToConvert" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/convertBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="myClickHandler"
@@ -31,17 +31,16 @@
         android:visibility="visible">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioBtnEuro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/euro" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/radioBtnDollar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dollar" />
-
     </RadioGroup>
 </LinearLayout>
