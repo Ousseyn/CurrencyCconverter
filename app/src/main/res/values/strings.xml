@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency converter</string>
+    <string name="euro">in €</string>
+    <string name="dollar">in $</string>
+    <color name="myColour"> #3399CC</color>
+    <string name="valueToConvert"> Value to convert</string>
+    <string name="convert"> Convert </string>
+</resources>
